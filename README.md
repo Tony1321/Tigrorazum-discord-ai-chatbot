@@ -1,4 +1,4 @@
-# Tigrorazum - discord-ai-chatbot
+# Tigrorazum - Discord AI Chatbot
 > Tigrorazum — это AI чатбот для Discord, который отвечает на сообщения пользователей с помощью модели OpenRouter, запоминает диалоги и позволяет настраивать поведение под сервер и конкретного пользователя.
 
 ## Что умеет бот
