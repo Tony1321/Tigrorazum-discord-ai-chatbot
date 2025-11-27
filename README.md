@@ -1,2 +1,68 @@
 # Tigrorazum - discord-ai-chatbot
-> Tigrorazum — a simple and versatile Discord bot that can chat on any topic based on prompts. Designed for interactive conversations and easy integration into your server.
+> Tigrorazum — это AI чатбот для Discord, который отвечает на сообщения пользователей с помощью модели OpenRouter, запоминает диалоги и позволяет настраивать поведение под сервер и конкретного пользователя.
+
+## Что умеет бот
+
+* Отвечает на сообщения AI с учётом истории диалогов.
+* Хранит память пользователя и сервера (можно очищать).
+* Позволяет задавать персональные инструкции для отдельных пользователей.
+* Администраторы и доверенные пользователи могут менять системный промпт сервера.
+* Управление доверенными пользователями для безопасного изменения промптов.
+
+## Основные команды
+
+### Чат с AI
+```
+!tigr <сообщение>
+```
+```
+!t <сообщение>
+```
+
+### Персональная инструкция
+```
+/set_instruction user: <@user> instruction: <текст>
+```
+
+### Серверный промпт
+```
+/set_server_prompt prompt: <текст>
+```
+
+### Управление доверенными пользователями
+```
+/add_authorized_user user: <@user>
+```
+```
+/remove_authorized_user user: <@user>
+```
+
+Очистка памяти
+```
+/forget [user: <@user>]
+```
+
+## Установка
+
+### 1. Клонируйте репозиторий:
+
+```
+git clone <URL>
+cd tigrorazum
+```
+
+### 2. Установите зависимости:
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Создайте .env с токеном бота и ключом OpenRouter:
+
+```
+DISCORD_TOKEN=ваш_токен_бота
+OPENROUTER_API_KEY=ваш_API_ключ
+MODEL=название_модели
+```
+
+Запустите бота через bot.bat
