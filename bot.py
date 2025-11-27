@@ -8,7 +8,7 @@ import requests
 from datetime import datetime, timezone
 
 # ==========================
-# 🔧 Настройка окружения
+#  Настройка окружения
 # ==========================
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
